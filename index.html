@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="window">
+        <div class="login windows">
+            <div class="header" style="justify-content: center;">
+                <h2>Login</h1>
+            </div>
+            <div class="logininputs">
+
+                <form id="login-form">
+                    <div class="form-el">
+                        <label for="login-email">Email:</label><br>
+                    <input required type="email" class="login-input form-input" id="login-email">
+                    </div>
+                    <div class="form-el">
+                        <label for="login-password">Password:</label><br>
+                        <input required  minlength="4" type="password" class="login-input form-input" id="login-password">
+                    </div>
+                    <div class="form-el">
+                        <input type="submit" value="login" class="form-btn" id="login-btn">
+                    </div>
+                    <a class="a-reg" id="a-reg" href="#">Register</a>
+                </form>
+            </div>
+        </div>
+        <div class="register windows">
+            <div class="header" style="justify-content: center;">
+                <h2>Register</h1>
+            </div>
+            <div class="logininputs">
+
+                <form id="register-form">
+                    <div class="form-el">
+                        <label for="register-email">Name:</label><br>
+                        <input required type="text" class="form-input register-input" id="register-name">
+                    </div>
+
+                    <div class="form-el">
+                        <label for="register-email">Email:</label><br>
+                    <input required type="email" class="form-input register-input" id="register-email">
+                    </div>
+
+                    <div class="form-el">
+                        <label for="register-password">Password:</label><br>
+                        <input required  minlength="4" type="password" class="form-input register-input" id="register-password">
+                    </div>
+
+                    <div class="form-el">
+                        <label for="register-password">Confirm password:</label><br>
+                        <input required  minlength="4" type="password" class="form-input register-input" id="register-password_confirmation">
+                    </div>
+
+                    <div class="form-el">
+                        <input type="submit" value="register" class="form-btn" id="register-btn">
+                    </div>
+
+                    <a class="a-reg" id="a-login" href="#">Login</a>
+                </form>
+            </div>
+        </div>
+        <div class="chatapp windows">
+            <div class="header">
+                <a class="a-logout" id="logout" href="#">Logout</a>
+                <h2>ChatApp</h1>
+            </div>
+            <div class="messages">
+            </div>
+
+            <div class="type">
+                <form id="message-form">
+                    <input type="text" id="chat-input" class="input" required>
+                    <input type="submit" value=">>>" class="send">
+                </form>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>
