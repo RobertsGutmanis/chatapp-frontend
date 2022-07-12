@@ -61,6 +61,7 @@ const get_message = async (token) =>{
 if(localStorage.getItem("token")){
     view_login.style.display="none";
     view_chat.style.display="inline";
+    get_message(localStorage.getItem("token"))
 }
 
 const messages = document.querySelector(".messages");
